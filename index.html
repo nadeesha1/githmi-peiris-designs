@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Githmi Peiris Designs | Luxury Interior Architecture</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Premium UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Premium Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="assets/images/logo.png" alt="Githmi Peiris Designs Logo" class="logo-img" width= "200px" height="45px">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Luxury Interior Architecture</p>
+            <h1 class="hero-title">Crafting Unique & Elegant Spaces</h1>
+            <a href="#projects" class="btn-primary">Explore Portfolio</a>
+        </div>
+    </header>
+
+    <!-- Creative History & About Section -->
+	<section id="about" class="about-section">
+		<div class="container">
+			<div class="section-header">
+				<span class="super-title">Our Legacy</span>
+				<h2>About Githmi Peiris Designs</h2>
+				<div class="accent-line"></div>
+			</div>
+			
+			<div class="about-grid">
+				<!-- COLUMN 1: Stats & Visual Showcase -->
+				<div class="about-text-block">
+					<!-- NEW: Architecture Image Container -->
+					<div class="about-image-wrapper">
+						<img src="assets/images/about_me.png" alt="Githmi Peiris Designs - Interior Architecture Showcase" class="about-img">
+					</div>
+				</div>
+
+				<!-- COLUMN 2: Profile & Studio Narrative -->
+				
+				<div class="about-text-block">
+					<h3>Githmi Peiris</h3>
+					<h4>BA (Hons) in Interior Architecture</h4>
+					<h5>Limkokwing University of Creative Technology, Malaysia</h5> &nbsp;
+					<p>
+					Githmi Peiris is a visionary Interior Architect holding a BA (Hons) from Malaysia's Limkokwing University. With over seven years of elite industry experience, she infuses premium residential, luxury commercial, and boutique hospitality sectors with meticulous structural detail and an empathetic approach.
+					</p>
+					<p>
+					Established in 2015, Sri Lanka-based Githmi Peiris Designs is a premier, full-service interior architecture firm celebrated for a 100% satisfaction record across 450+ global projects. The elite team acts as design storytellers, seamlessly delivering bespoke structural solutions and high-end products impeccably on schedule.
+					</P>
+					
+					<div class="about-features">
+						<div class="feature-box">
+							<h4>450+</h4>
+							<span>Projects</span>
+						</div>
+
+						<div class="feature-box">
+							<h4>100%</h4>
+							<span>Client Satisfaction</span>
+						</div>
+
+						<div class="feature-box">
+							<h4>8+</h4>
+							<span>Years Experience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Filterable Premium Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="super-title">Curated Portfolios</span>
+                <h2>Recent Interior Creations Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Category 1 -->
+                <div class="project-card" onclick="openGallery('residential')">
+					<div class="card-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('assets/images/main_bg.png');"></div>
+					<div class="project-info">
+						<h3>Residential Interior</h3>
+						<span>View Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					</div>
+				</div>
+
+                <!-- Category 2 -->
+                <div class="project-card" onclick="openGallery('hotels')">
+                    <div class="card-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('assets/images/hotels.png');"></div>
+                    <div class="project-info">
+                        <h3>Hotels Portfolio</h3>
+                        <span>View Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="project-card" onclick="openGallery('restaurant')">
+                    <div class="card-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('assets/images/resturent.png');"></div>
+                    <div class="project-info">
+                        <h3>Restaurant & Café</h3>
+                        <span>View Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="project-card" onclick="openGallery('commercial')">
+                    <div class="card-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('assets/images/commercial.png');"></div>
+                    <div class="project-info">
+                        <h3>Commercial Spaces</h3>
+                        <span>View Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Slideshow Feedback Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="super-title" style="color: #fff; opacity: 0.8;">Client Reviews</span>
+                <h2 style="color: #fff;">User Feedback</h2>
+                <div class="accent-line" style="background-color: #fff;"></div>
+            </div>
+
+            <div class="slideshow-wrapper">
+                <div class="feedback-container">
+                    <!-- Slide 1 -->
+                    <div class="feedback-slide active">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="feedback-text">"Githmi Peiris Designs structuralized our living pavilion with immaculate taste layout parameters. Absolute 100% timeless satisfaction tier standards!"</p>
+                        <h4 class="client-name">Nalinda Perera</h4>
+                        <span class="client-role">Colombo Residential Project</span>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="feedback-slide">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="feedback-text">"The bespoke luxury theme integration across our commercial office spaces completely transformed our brand experience. Simply elite team talent."</p>
+                        <h4 class="client-name">Sarah Jenkins</h4>
+                        <span class="client-role">Tech Executive Suite Office</span>
+                    </div>
+                </div>
+                
+                <!-- Nav Arrows -->
+                <button class="slide-btn prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slide-btn next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="super-title">Expertise Services</span>
+                <h2>What We Offer</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fa-solid fa-compass-drafting service-icon"></i>
+                    <h3>Concept Architecture</h3>
+                    <p>Bespoke floor plan structuralization mapped with spatial layout fluid ergonomics perfectly custom aligned.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-couch service-icon"></i>
+                    <h3>Premium Sourcing</h3>
+                    <p>Exclusive luxury material furniture curations mapping global tier solution dynamics seamlessly executed.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+                    <h3>Turnkey Premium Fitouts</h3>
+                    <p>End-to-end site solution oversight engineered smoothly to maintain precise aesthetic excellence values.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Message Inquiry Form -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="super-title">Get In Touch</span>
+                <h2>Say Hello</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-area">
+                    <form id="inquiryForm" onsubmit="handleInquiry(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Project Description details..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Inquire Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-area">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Wennappuwa, Sri Lanka</p>
+                    <p><i class="fa-solid fa-phone"></i> +94 77 517 3633</p>
+                    <p><i class="fa-solid fa-envelope"></i> githmipeirisdesigns@gmail.com</p>
+
+                    <div class="social-links-area">
+                        <h3>Follow Our Journey</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/githmipeirisdesigns?igsh=MXhnNTd0MHF1bzcycg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://pin.it/6kkndSbmJ" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com/share/1TPi1inB27/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer Elements -->
+    <footer>
+        <p>&copy; 2027 Githmi Peiris Designs. All Rights Reserved.</p>
+    </footer>
+	
+	<script src="script.js"></script>
+
+</body>
+
+</html>
